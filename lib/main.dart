@@ -30,7 +30,12 @@ class _BallState extends State<Ball> {
   Widget build(BuildContext context) {
     return Container(
       child: Center(
-        child: Image.asset('images/ball1.png'),
+        child: FlatButton(
+          onPressed: () {
+            print("Button tapped");
+          },
+          child: Image.asset('images/ball1.png'),
+        ),
       ),
     );
   }
